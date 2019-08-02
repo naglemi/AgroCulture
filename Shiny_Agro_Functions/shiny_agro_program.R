@@ -79,6 +79,7 @@ ui <- fluidPage(
                            h2("3. Input the desired final OD600 of the", strong("50 mL fresh/sterile media", "you will innoculate.")),
                            h2("4. Input the volume of the starter culture you added to the", strong("50 mL fresh/sterile media.")),
                            h2("5. Interpretation of Results: The first value tells how long it will take for the culture to grow to the desired OD600 at its optimal incubation temperature. The second value tells you what percentage of the culture will be fresh ie. new daughter cells."),
+                           br(),
                            h2(textOutput("hours"))
                            )
                )
