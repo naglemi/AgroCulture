@@ -57,7 +57,7 @@ ui <- fluidPage(
                  sidebarPanel(
                    h2("Inputs:"),
                    
-                   selectInput("bacteria",
+                   selectInput("bacteriahours",
                      h4("Choose type of bacteria"),
                      choices = list("AGL1", "E.coli")),
                    
@@ -103,7 +103,7 @@ server <- function(input, output) {
         Final_OD = input$FinalOD,
         starter_culture_OD = input$OD600hours,
         Volume_starter_inoculate = input$Starterinnoculate,
-        this_bacteria = input$bacteria
+        this_bacteria = input$bacteriahours
       )
     )
   
